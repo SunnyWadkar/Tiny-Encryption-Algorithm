@@ -10,7 +10,7 @@
 
 extern unsigned32_t tea_encryption_key[4];
 
-void tea_encrypt (unsigned32_t* plaintext);
-void tea_decrypt (unsigned32_t* crypttext);
+void tea_encrypt (unsigned32_t [2]);
+void tea_decrypt (unsigned32_t [2]);
 
 #endif
