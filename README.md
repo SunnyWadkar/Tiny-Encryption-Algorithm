@@ -1,2 +1,2 @@
 # Tiny-Encryption-Algorithm
-C Implementation of TEA
+Simple C Implementation of TEA (Basic Project)
