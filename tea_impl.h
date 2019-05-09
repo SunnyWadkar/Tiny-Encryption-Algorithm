@@ -8,7 +8,9 @@
 #define NUMBER_OF_CIPHER_ROUNDS 32
 #define KEY_SCHED_SUM_CONST 0x13C6EF3720 //0x9E3779B9 << 5 for 32 rounds
 
-void tea_encrypt (unsigned32_t* plaintext, unsigned32_t* enc_key);
-void tea_decrypt (unsigned32_t* crypttext, unsigned32_t* enc_key);
+extern unsigned32_t tea_encryption_key[4];
+
+void tea_encrypt (unsigned32_t* plaintext);
+void tea_decrypt (unsigned32_t* crypttext);
 
 #endif
