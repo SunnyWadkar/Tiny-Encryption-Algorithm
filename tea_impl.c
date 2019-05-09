@@ -2,7 +2,8 @@
 
 void tea_encrypt (unsigned32_t plaintext[2])
 {
-    unsigned32_t plaintext_part1 = plaintext[0], plaintext_part2 = plaintext[1], key_schd_sum = 0;
+    unsigned32_t plaintext_part1 = plaintext[0], plaintext_part2 = plaintext[1];
+    unsigned32_t key_schd_sum = 0;
     for (signed8_t i=0; i < NUMBER_OF_CIPHER_ROUNDS; i++)
     {
         key_schd_sum += KEY_SCHEDULING_CONST;
