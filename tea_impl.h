@@ -1,7 +1,6 @@
 #ifndef TEA_IMPL_H
 #define TEA_IMPL_H
 
-#include "stdio.h"
 #include "portable_types.h"
 
 #define KEY_SCHEDULING_CONST 0x9E3779B9  //key scheduling constant calculated as (2^32)/golden ratio 1.6180339887

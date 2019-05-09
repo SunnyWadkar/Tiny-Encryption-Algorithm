@@ -26,13 +26,3 @@ void tea_decrypt (unsigned32_t crypttext[2])
     crypttext[0] = crypttext_part1;
     crypttext[1] = crypttext_part2;
 }
-
-int main(void)
-{
-  unsigned32_t num[2]={10,20}; // 8 byte input
-  tea_encrypt(num);
-  printf("After Encryption: %ld,%ld \n",num[0],num[1]);
-  tea_decrypt(num);
-  printf("After Decryption: %ld,%ld \n",num[0],num[1]);
-  return 0;
-}
