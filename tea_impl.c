@@ -1,6 +1,4 @@
-#include "stdio.h"
-
-typedef long unsigned32_t;
+#include "tea_impl.h"
 
 const unsigned32_t key_schd_const = 0x9E3779B9;  //key scheduling constant calculated as (2^32)/golden ratio 1.6180339887
 
@@ -31,10 +29,10 @@ void tea_decrypt (unsigned32_t* crypttext, unsigned32_t* enc_key)
     *(crypttext + 1) = crypttext_part2;
 }
 
-int main()
+int main(void)
 {
-  unsigned32_t num[2]={10,20};
-  unsigned32_t encryption_key[4]={30,40,50,60};
+  unsigned32_t num[2]={10,20}; // 8 byte input
+  unsigned32_t encryption_key[4]={30,40,50,60}; // 128-bit key
   tea_encrypt(num,encryption_key);
   printf("After Encryption: %ld,%ld \n",num[0],num[1]);
   tea_decrypt(num,encryption_key);
